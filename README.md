@@ -46,8 +46,7 @@ Docker_Sample_Application/
 │
 ├── app.py              # Flask application main file
 ├── Dockerfile          # Docker configuration file
-├── README.md           # Project documentation (this file)
-├── assignment.pdf      # Lab assignment guide
+├── README.md           # Project documentation
 ├── .gitignore         # Git ignore file
 │
 └── assets/            # Project assets and screenshots
@@ -211,15 +210,7 @@ This validates that:
 - Exposed Port: `5000`
 - Entry Point: `python app.py`
 
-## Lab Assignment
 
-This project is based on a lab assignment focused on Docker containerization. The assignment guide (`assignment.pdf`) contains detailed instructions for:
-
-- Understanding Docker fundamentals
-- Creating Dockerfiles
-- Building and running containers
-- Working with Docker commands
-- Container networking and port mapping
 
 **Learning Objectives:**
 1. Understand the basics of containerization
@@ -264,7 +255,6 @@ sudo usermod -aG docker $USER
 ## Notes
 
 - The application uses Flask's development server, which is suitable for learning and development but **not recommended for production**
-- For production deployments, consider using a production WSGI server like Gunicorn or uWSGI
 - The slim Python image reduces the final image size while maintaining essential functionality
 - Container data is ephemeral; stopping and removing the container will delete any data not stored in volumes
 
